@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="homework3.css" type="text/css">
+<script language="javascript" type="text/javascript" src="homework3.js"></script>
+
+<title>CoolBook</title>
+</head>
+
+<body>
+
+
+
+<div class="loginPage" id="loginPage">
+  <div class="header" id="header">
+    <div style="float:left;"><img src="http://mymcbooks.files.wordpress.com/2011/01/clip-art-book.jpg" alt="book" width="85" height="75"/></div>
+	<div style="padding:0.5px; font-size:32px; font-style:italic;"><p>CoolBook</p></div>
+  </div>
+  <div class="login" id="login">
+  <form name="loginForm" method="post" action="login.php" onsubmit="return checkInput()">
+  <fieldset>
+    <legend><b>Login</b></legend>
+	<div class="field">
+	   <div class="title1">User Name: </div>
+	   <input class="css_input" id="username" type="text" name="username" onBlur="checkValid('use')"/>
+	   <span id="use"></span>
+	   </div>
+	<div class="field">
+	   <div class="title1">Password: </div>
+	   <input class="css_input" id="pw" type="password" name="pw" onBlur="checkValid('pass')"/>
+	   <span id="pass"></span>
+	   </div>
+	<div class="button">
+	   <input type="submit" name="login" value="Login" class="butn"/>
+	   <input name="reset" type="reset" value="Reset" class="butn" />
+	 
+	</div>	   
+  </fieldset></form>
+  </div>
+</div>
+</body>
+</html>
